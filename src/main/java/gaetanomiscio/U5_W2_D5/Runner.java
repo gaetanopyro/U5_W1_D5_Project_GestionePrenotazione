@@ -67,12 +67,12 @@ public class Runner implements CommandLineRunner {
         utente4 = utenteService.saveUtente(utente4);
         utente5 = utenteService.saveUtente(utente5);
 
-        prenotazioneService.newPrenotazione(utente1.getId(), postazione1.getId(), LocalDate.now());
-        prenotazioneService.newPrenotazione(utente2.getId(), postazione2.getId(), LocalDate.now());
-        prenotazioneService.newPrenotazione(utente3.getId(), postazione3.getId(), LocalDate.now());
-        prenotazioneService.newPrenotazione(utente4.getId(), postazione4.getId(), LocalDate.now());
-        prenotazioneService.newPrenotazione(utente5.getId(), postazione5.getId(), LocalDate.now());
+        prenotazioneService.newPrenotazione(utente1.getId(), postazione1.getId(), LocalDate.of(2025, 7, 21));
+        prenotazioneService.newPrenotazione(utente2.getId(), postazione2.getId(), LocalDate.of(2025, 7, 23));
+        prenotazioneService.newPrenotazione(utente3.getId(), postazione3.getId(), LocalDate.of(2025, 7, 25));
+        prenotazioneService.newPrenotazione(utente4.getId(), postazione4.getId(), LocalDate.of(2025, 7, 28));
+        prenotazioneService.newPrenotazione(utente5.getId(), postazione5.getId(), LocalDate.of(2025, 7, 30));
 
-        System.out.println("Dati inseriti");
+        System.out.println("Dati delle Gestione delle prenotazioni inserite");
     }
 }
